@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&family=Nunito:wght@300;400;500;700&family=Titillium+Web&display=swap");
+/* line 4, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+body {
+  font: 18px 'Nunito' sans-serif;
+  color: black;
+  min-height: 100vl;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("/bg.jpeg") no-repeat center;
+  background-size: cover;
+  animation: backgroundZoomAnimate 20s forwards;
+}
+
+@keyframes backgroundZoomAnimate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card {
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
+  width: 650px;
+  position: relative;
+  backdrop-filter: blur(15px);
+  border: 2px solid #abbdcf;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (max-width: 764ox) {
+  /* line 34, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card {
+    width: auto;
+  }
+}
+
+/* line 50, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__img img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 10px 70px rgba(13, 28, 39, 0.5);
+}
+
+/* line 60, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__desc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* line 66, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__desc h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
