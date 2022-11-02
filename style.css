@@ -77,4 +77,182 @@ body::before {
   font-weight: bold;
 }
 
+/* line 70, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__desc h1 + div {
+  font-size: 20px;
+}
+
+/* line 76, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  /* line 76, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__info {
+    gap: 30px;
+  }
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__info > div {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__info > div > *:first-child {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* line 98, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__info > div > *:last-child {
+  font-size: 16px;
+  opacity: .7;
+}
+
+/* line 105, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 111, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__social a {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  margin: 15px;
+  border-radius: 40%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  flex-shrink: 0;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 111, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__social a {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 131, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__social a:hover {
+    transform: scale(1.2) translateY(-5px);
+  }
+}
+
+/* line 136, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__social a.facebook {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+/* line 141, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__social a.inst {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+/* line 146, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__social a.twitter {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+/* line 151, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__social a.git {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+/* line 159, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  /* line 159, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* line 170, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__actions > button {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 250px;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 170, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__actions > button {
+    min-width: 170px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 170, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__actions > button {
+    min-width: inherit;
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 192, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+  .profile-card__actions > button:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* line 197, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__actions > button.blue {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+
+/* line 201, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__actions > button.blue:hover {
+  box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
+}
+
+/* line 206, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__actions > button.orange {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+
+/* line 210, ../../../../../../../../../../../../../Users/efremovdm/Desktop/profile_card/scss/style.scss */
+.profile-card__actions > button.orange:hover {
+  box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
+}
+
 /*# sourceMappingURL=style.css.map */
